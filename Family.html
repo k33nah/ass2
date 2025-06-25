@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Family</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    /* Navigation */
+    header {
+      background-color: grey;
+      padding: 10px 20px;
+      color: white;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      padding: 6px 10px;
+      transition: background 0.3s;
+    }
+
+    nav ul li a:hover {
+      background-color: #303f9f;
+      border-radius: 5px;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #e3f2fd;
+    }
+
+    .hero h1 {
+      margin: 0;
+      font-size: 36px;
+      color: #2c3e50;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #555;
+    }
+
+    /* Family Section */
+    .family-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 40px 20px;
+    }
+
+    .family-member {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      text-align: center;
+      width: 300px;
+    }
+
+    .family-member img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .family-member h3 {
+      margin: 15px 0 10px;
+      color: #3f51b5;
+    }
+
+    .family-member p {
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 768px) {
+      .family-section {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header + Navigation -->
+  <header>
+    <div class="nav">
+      <div class="logo">My Family </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Biodata.html">Biodata</a></li>
+          <li><a href="Experience.html">Experience</a></li>
+          <li><a href="Education.html">Education</a></li>
+          <li><a href="Family.html">Family</a></li>
+          <li><a href="Gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>My Lovely Family</h1>
+    <p>Where love begins and never ends</p>
+  </section>
+
+  <!-- Family Members Section -->
+  <section class="family-section">
+    <div class="family-member">
+      <img src="gambar/abah.jpeg" >
+      <h3>My Father</h3>
+      <p>
+        NAME: MOHAMAT NOR BIN SHARIFF<br>
+        AGE: 63<br>
+        WORK: ASSISTANT VOCATIONAL TRAINING OFFICER<br><br>
+        He is a hardworking and wise man who inspires us every day.
+      </p>
+    </div>
+
+    <div class="family-member">
+      <img src="gambar/gmbar mak.jpeg" alt="Mother">
+      <h3>My Mother</h3>
+      <p>
+        NAME: RUBIAH BINTI SAIRIN<br>
+        AGE: 60<br>
+        WORK: TEACHER<br><br>
+        Kind-hearted, supportive, and always there for us with her warm smile.
+      </p>
+    </div>
+
+    <div class="family-member">
+      <img src="gambar/family.jpeg" alt="Family">
+      <h3>Family</h3>
+      <p>
+        Funny, helpful, and my best partner in all adventures.
+      </p>
+    </div>
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,276 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  color: white;
+  background-color: #000;
+}
+
+
+body.no-bg header {
+  background-image: none !important;
+  background-color: #111;
+  height: auto;
+  padding: 40px 0;
+}
+
+
+body.experience-page {
+  background-color: white;
+  color: black;
+}
+
+body.experience-page header {
+  background-image: none !important;
+  background-color: #f5f5f5;
+  height: auto;
+  padding: 40px 0;
+}
+
+body.experience-page h1,
+body.experience-page h2,
+body.experience-page h3,
+body.experience-page h4,
+body.experience-page p,
+body.experience-page li,
+body.experience-page a {
+  color: black !important;
+}
+
+body.experience-page .offerings {
+  background-color: white;
+}
+
+
+header {
+  height: 100vh;
+  background-image: url('background depan.jpg');
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.search {
+  font-size: 18px;
+}
+
+.hero {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  color: white;
+}
+
+.text h2 {
+  font-size: 24px;
+}
+
+.text h1 {
+  font-size: 36px;
+  margin: 10px 0;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+h1.main-title {
+  font-family: 'Broadway', sans-serif;
+  font-size: 28px;
+  color: #876e3e;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.profile-photo {
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ddd;
+}
+
+.profile-table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.profile-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  vertical-align: top;
+}
+
+.profile-table td:first-child {
+  font-weight: bold;
+  width: 200px;
+  background-color: #f0f0f0;
+}
+
+.placeholder {
+  color: #181515;
+  font-weight: bold;
+}
+
+.section-title {
+  font-size: 20px;
+  margin: 30px auto 10px;
+  text-align: center;
+  color: #333;
+}
+
+ul.fav-list {
+  list-style-type: decimal;
+  margin: 0;
+  padding-left: 20px;
+  color: #0f0e0e;
+}
+
+.video-example,
+.social-icon {
+  display: block;
+  margin: 10px auto;
+  max-width: 100%;
+}
+
+.social-icon {
+  width: 100px;
+  height: 100px;
+}
+
+.quote {
+  text-align: center;
+  font-style: italic;
+  margin-top: 30px;
+  font-size: 16px;
+  color: #333;
+}
+
+header.offerings-header {
+  text-align: center;
+  padding: 100px 20px 60px;
+  background-color: #d6d1c0;
+}
+
+header.offerings-header h1 {
+  font-size: 3rem;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+header.offerings-header h2 {
+  font-size: 1rem;
+  font-style: italic;
+  margin-top: 10px;
+  color: #7a6e56;
+}
+
+.offerings {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.offerings h3 {
+  font-size: 1.8rem;
+  margin-bottom: 40px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 30px;
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.card h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  header.offerings-header h1 {
+    font-size: 2.2rem;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* FOOTER */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+footer p {
+  margin: 0;
+  color: #ddd;
+}
+
+footer p span {
+  color: #00bcd4;
+}

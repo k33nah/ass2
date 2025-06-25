@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gallery</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    /* Navigation */
+    header {
+      background-color: grey;
+      padding: 10px 20px;
+      color: white;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      padding: 6px 10px;
+      transition: background 0.3s;
+    }
+
+    nav ul li a:hover {
+      background-color: #303f9f;
+      border-radius: 5px;
+    }
+    .portfolio {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .portfolio h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+      color: #2c3e50;
+    }
+
+    .portfolio small {
+      font-size: 16px;
+      color: #888;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 30px 10px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .grid-item {
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+      transition: transform 0.3s ease;
+    }
+
+    .grid-item:hover {
+      transform: scale(1.03);
+    }
+
+    .grid-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  </style>
+</head>
+  <header>
+    <div class="nav">
+      <div class="logo">Gallery</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Biodata.html">Biodata</a></li>
+          <li><a href="Experience.html">Experience</a></li>
+          <li><a href="Education.html">Education</a></li>
+          <li><a href="Family.html">Family</a></li>
+          <li><a href="Gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+<body>
+
+  <section class="portfolio">
+    <h1><span>Gallery</span><br><small>A picture is a moment that never fades</small></h1>
+    <div class="grid">
+      <div class="grid-item"><img src="gambar/p1.jpeg" alt="Image 1"></div>
+      <div class="grid-item"><img src="gambar/p2.jpg" alt="Image 2"></div>
+      <div class="grid-item"><img src="gambar/p3.jpeg" alt="Image 3"></div>
+      <div class="grid-item"><img src="gambar/p4.jpeg" alt="Image 4"></div>
+      <div class="grid-item"><img src="gambar/p5.jpeg" alt="Image 5"></div>
+      <div class="grid-item"><img src="gambar/p6.jpeg" alt="Image 6"></div>
+      <div class="grid-item"><img src="gambar/p7.jpg" alt="Image 7"></div>
+      <div class="grid-item"><img src="gambar/p8.jpg" alt="Image 8"></div>
+      <div class="grid-item"><img src="gambar/p9.jpg" alt="Image 9"></div>
+    </div>
+  </section>
+
+</body>
+</html>
